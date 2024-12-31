@@ -1,6 +1,6 @@
-import React from "react";
-import Image from "next/image";
-import Link from "next/link";
+import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
 
 const SportsBlog = () => {
   return (
@@ -97,7 +97,7 @@ const SportsBlog = () => {
                 alt="Marathon Running Event" 
                 width={600} 
                 height={400} 
-                className="w-full h-58 object-cover rounded-lg" 
+                className="w-full h-48 object-cover rounded-lg" 
               />
               <h3 className="text-2xl font-bold mt-4 mb-2">The Rise of AI in Vehicle Safety</h3>
               <p className="text-gray-600">
@@ -115,11 +115,11 @@ const SportsBlog = () => {
                 alt="Sports Tech Innovations" 
                 width={600} 
                 height={400} 
-                className="w-full h-58 object-cover rounded-lg" 
+                className="w-full h-48 object-cover rounded-lg" 
               />
-              <h3 className="text-2xl font-bold mt-4 mb-2">The Benefits of Health & Wellness: Achieving Balance and Flourishing in Life</h3>
+              <h3 className="text-2xl font-bold mt-4 mb-2">The Benefits of Health & Wellness</h3>
               <p className="text-gray-600">
-                In an increasingly fast-paced and demanding world, the pursuit of health and wellness has become a paramount goal for many individuals. Health and wellness encompass a holistic approach to well-being, focusing on physical, mental, emotional, and social aspects of life. This comprehensive perspective aims to promote balance and vitality, enabling individuals to lead fulfilling lives. The benefits of embracing health and wellness practices are far-reaching and profound, impacting various facets of one's existence.
+                In an increasingly fast-paced and demanding world, the pursuit of health and wellness has become a paramount goal for many individuals. Health and wellness encompass a holistic approach to well-being, focusing on physical, mental, emotional, and social aspects of life. This comprehensive perspective aims to promote balance and vitality, enabling individuals to lead fulfilling lives.
               </p>
               <Link href="#" className="text-blue-600 hover:underline">
                 Read More →
@@ -133,9 +133,9 @@ const SportsBlog = () => {
                 alt="eSports Landscape" 
                 width={600} 
                 height={400} 
-                className="w-full h-58 object-cover rounded-lg" 
+                className="w-full h-48 object-cover rounded-lg" 
               />
-              <h3 className="text-2xl font-bold mt-4 mb-2">"3 Hours of Fascinating Space Facts to Fall Asleep To."</h3>
+              <h3 className="text-2xl font-bold mt-4 mb-2">3 Hours of Fascinating Space Facts to Fall Asleep To</h3>
               <p className="text-gray-600">
                 Space is a giant playground of wonders, where stars twirl and galaxies shimmer in a dance choreographed by the laws of physics. We uncover the secrets of distant worlds and the very beginnings of everything but beyond all that, space invites us to embark on a journey of discovery, reminding us of the boundless possibilities that lie beyond the confines of our world.
               </p>
@@ -146,7 +146,7 @@ const SportsBlog = () => {
           </div>
 
           {/* Sidebar Section */}
-          <div className="md:col-span-4 bg-white rounded-lg shadow-lg p-6">
+          <div className="md:col-span-1 bg-white rounded-lg shadow-lg p-6">
             <h3 className="text-xl font-bold mb-4">About Our Sports Blog</h3>
             <p className="text-gray-600">
               Welcome to our Sports Blog! Here, we bring you the latest news, insightful articles, and updates from the world of sports. Stay tuned for exciting content on your favorite sports.
@@ -161,7 +161,7 @@ const SportsBlog = () => {
             <p className="mt-4">
               Connect with us on social media for updates, news, and discussions on all things sports!
             </p>
-            
+
             <div className="mt-6 space-y-4">
               <Link href="#" className="btn bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded">
                 Subscribe Now
@@ -193,6 +193,8 @@ const SportsBlog = () => {
 };
 
 export default SportsBlog;
+
+
 
 
 

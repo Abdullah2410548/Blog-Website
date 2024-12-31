@@ -14,7 +14,7 @@ const Home = () => {
           <p className="text-lg mb-6">
             A space where creativity meets words. Discover inspiring stories, tutorials, and insights.
           </p>
-          <Link href="/#blog" className="btn bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded">
+          <Link href="/blog" className="btn bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded">
             Explore Blog
           </Link>
         </div>
@@ -29,31 +29,29 @@ const Home = () => {
 
             {/* Blog Post #1 */}
             <div className="mb-8">
-              <div className="w-full">
-                <Image 
-                  src="/ai1.jpeg" 
-                  alt="Post title" 
-                  width={1200} 
-                  height={675} 
-                  className="rounded-lg object-cover w-full" 
-                />
-              </div>
+              <Image 
+                src="/ai1.jpeg" 
+                alt="AI Advancements" 
+                width={1200} 
+                height={675} 
+                className="rounded-lg object-cover w-full" 
+              />
               <h3 className="text-2xl font-bold mt-4 mb-2">
                 The Future of AI: 5 AI Advancements to Expect in the Next 10 Years
               </h3>
               <p className="text-gray-600">
                 Artificial Intelligence (AI) continues to evolve at an unprecedented pace, reshaping industries and daily life. Over the next decade, we can expect groundbreaking advancements that will push the boundaries of what AI can achieve.
               </p>
-              <Link href="#" className="text-blue-600 hover:underline">
+              <Link href="/blog/ai-future" className="text-blue-600 hover:underline">
                 Read More &rarr;
               </Link>
             </div>
-            
+
             {/* Blog Post #2 */}
             <div className="mb-8">
               <Image 
                 src="/bholes.jpg" 
-                alt="Post title" 
+                alt="Supermassive Black Holes" 
                 layout="responsive" 
                 width={1200} 
                 height={675} 
@@ -61,9 +59,9 @@ const Home = () => {
               />
               <h3 className="text-2xl font-bold mt-4 mb-2">NASA's Hubble, Chandra Find Supermassive Black Holes</h3>
               <p className="text-gray-600">
-                NASA's iconic Hubble Space Telescope and the Chandra X-ray Observatory have made groundbreaking discoveries, revealing the existence of supermassive black holes at the centers of galaxies across the universe. These astronomical marvels, millions to billions of times more massive than the Sun, are critical to understanding the formation and evolution of galaxies.
+                NASA's iconic Hubble Space Telescope and the Chandra X-ray Observatory have made groundbreaking discoveries, revealing the existence of supermassive black holes at the centers of galaxies across the universe.
               </p>
-              <Link href="#" className="text-blue-600 hover:underline">
+              <Link href="/blog/black-holes" className="text-blue-600 hover:underline">
                 Read More &rarr;
               </Link>
             </div>
@@ -72,24 +70,24 @@ const Home = () => {
             <div>
               <Image 
                 src="/space.jpg" 
-                alt="Post title" 
+                alt="Future of Space Exploration" 
                 layout="responsive" 
-                width={100} 
+                width={1200} 
                 height={675} 
                 className="rounded-lg object-cover" 
               />
               <h3 className="text-2xl font-bold mt-4 mb-2">The Future of Space Exploration</h3>
               <p className="text-gray-600">
-                Space exploration is entering a bold new era, driven by cutting-edge technology, international collaboration, and a renewed sense of curiosity about the universe. Over the next few decades, humanity will push the boundaries of what is possible, venturing farther into space and unlocking the mysteries of distant worlds.
+                Space exploration is entering a bold new era, driven by cutting-edge technology, international collaboration, and a renewed sense of curiosity about the universe.
               </p>
-              <Link href="#" className="text-blue-600 hover:underline">
+              <Link href="/blog/space-exploration" className="text-blue-600 hover:underline">
                 Read More &rarr;
               </Link>
             </div>
           </div>
-          
+
           {/* Sidebar Section */}
-          <div className="md:col-span-4 bg-white rounded-lg shadow-lg p-6">
+          <div className="md:col-span-1 bg-white rounded-lg shadow-lg p-6">
             <h3 className="text-xl font-bold mb-4">About the Author</h3>
             <p className="text-gray-600">
               Hello! I'm [Your Name], a passionate blogger sharing insights, tutorials, and personal stories to inspire and educate.
@@ -105,7 +103,7 @@ const Home = () => {
             <p className="mt-4">
               Follow me on social media or subscribe to my newsletter to stay updated with new posts!
             </p>
-            
+
             <div className="mt-6 space-y-4">
               <Link href="#" className="btn bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded">
                 Subscribe Now
@@ -127,7 +125,7 @@ const Home = () => {
           <p className="text-lg mb-6">
             Stay updated with the latest posts, tutorials, and tips. Subscribe now to never miss a thing!
           </p>
-          <Link href="#" className="btn bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded">
+          <Link href="/subscribe" className="btn bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded">
             Subscribe Now
           </Link>
         </div>
@@ -136,7 +134,8 @@ const Home = () => {
   );
 };
 
-export default Home;       
+export default Home;
+   
 
 
 

@@ -6,27 +6,38 @@ const Contact: React.FC = () => {
   const [name, setName] = useState<string>('');
   const [email, setEmail] = useState<string>('');
   const [message, setMessage] = useState<string>('');
-  const [status, setStatus] = useState<string>('');
+  const [status, setStatus] = useState<string | null>(null);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    // API endpoint to send the form data
-    const res = await fetch('/api/contact', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ name, email, message }),
-    });
+    // Simple validation
+    if (!name || !email || !message) {
+      setStatus('Please fill out all fields.');
+      return;
+    }
 
-    if (res.ok) {
-      setStatus('Thank you for your message! We will get back to you soon.');
-      setName('');
-      setEmail('');
-      setMessage('');
-    } else {
-      setStatus('Something went wrong. Please try again later.');
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ name, email, message }),
+      });
+
+      if (res.ok) {
+        setStatus('Thank you for your message! We will get back to you soon.');
+        setName('');
+        setEmail('');
+        setMessage('');
+      } else {
+        const errorData = await res.json();
+        setStatus(errorData.message || 'Something went wrong. Please try again later.');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      setStatus('An error occurred. Please try again later.');
     }
   };
 

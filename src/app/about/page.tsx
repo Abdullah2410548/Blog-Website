@@ -59,7 +59,7 @@ const About: React.FC = () => {
           </p>
           <a
             href="#"
-            className="px-6 py-3 bg-[#052b03] hover:bg-[#0c5207] text-white font-semibold rounded-lg shadow-md hover:bg-yellow-600 dark:hover:bg-yellow-700 transition-all duration-300"
+            className="px-6 py-3 bg-[#17b33b] hover:bg-[#063811] text-white font-semibold rounded-lg shadow-md hover:bg-yellow-600 dark:hover:bg-yellow-700 transition-all duration-300"
           >
             Subscribe Now
           </a>
@@ -105,6 +105,7 @@ const About: React.FC = () => {
 };
 
 export default About;
+
 
 
 
