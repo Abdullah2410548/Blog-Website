@@ -55,7 +55,7 @@ const About: React.FC = () => {
         <div className="text-center mt-12">
           <h2 className="text-3xl font-semibold mb-4">Join the Conversation</h2>
           <p className="leading-7 mb-6">
-          We'd love to hear from you! Stay connected by subscribing to our newsletter, sharing your feedback, and following us on social media for the latest updates and insights. Let’s explore and grow together!
+            We'd love to hear from you! Stay connected by subscribing to our newsletter, sharing your feedback, and following us on social media for the latest updates and insights. Let’s explore and grow together!
           </p>
           <a
             href="#"
@@ -105,6 +105,7 @@ const About: React.FC = () => {
 };
 
 export default About;
+
 
 
 

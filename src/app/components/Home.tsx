@@ -27,28 +27,28 @@ const Home = () => {
           <div className="md:col-span-2">
             <h2 className="text-3xl font-bold mb-6">Latest Blog Posts</h2>
 
-   { /* Blog Post #1 */}
-   <div className="mb-8">
-      <div className="w-full">
-       <Image 
-           src="/ai1.jpeg" 
-         alt="Post title" 
-        width={1200} 
-          height={675} 
-          className="rounded-lg object-cover w-full" // Added `w-full` for full width
-        />
-      </div>
-      <h3 className="text-2xl font-bold mt-4 mb-2">
-        The Future of AI: 5 AI Advancements to Expect in the Next 10 Years
-      </h3>
-      <p className="text-gray-600">
-        Artificial Intelligence (AI) continues to evolve at an unprecedented pace, reshaping industries and daily life. Over the next decade, we can expect groundbreaking advancements that will push the boundaries of what AI can achieve.
-      </p>
-      <Link href="#" className="text-blue-600 hover:underline">
-        Read More →
-      </Link>
-    </div>
-    
+            {/* Blog Post #1 */}
+            <div className="mb-8">
+              <div className="w-full">
+                <Image 
+                  src="/ai1.jpeg" 
+                  alt="Post title" 
+                  width={1200} 
+                  height={675} 
+                  className="rounded-lg object-cover w-full" 
+                />
+              </div>
+              <h3 className="text-2xl font-bold mt-4 mb-2">
+                The Future of AI: 5 AI Advancements to Expect in the Next 10 Years
+              </h3>
+              <p className="text-gray-600">
+                Artificial Intelligence (AI) continues to evolve at an unprecedented pace, reshaping industries and daily life. Over the next decade, we can expect groundbreaking advancements that will push the boundaries of what AI can achieve.
+              </p>
+              <Link href="#" className="text-blue-600 hover:underline">
+                Read More &rarr;
+              </Link>
+            </div>
+            
             {/* Blog Post #2 */}
             <div className="mb-8">
               <Image 
@@ -64,7 +64,7 @@ const Home = () => {
                 NASA's iconic Hubble Space Telescope and the Chandra X-ray Observatory have made groundbreaking discoveries, revealing the existence of supermassive black holes at the centers of galaxies across the universe. These astronomical marvels, millions to billions of times more massive than the Sun, are critical to understanding the formation and evolution of galaxies.
               </p>
               <Link href="#" className="text-blue-600 hover:underline">
-                Read More →
+                Read More &rarr;
               </Link>
             </div>
 
@@ -83,7 +83,7 @@ const Home = () => {
                 Space exploration is entering a bold new era, driven by cutting-edge technology, international collaboration, and a renewed sense of curiosity about the universe. Over the next few decades, humanity will push the boundaries of what is possible, venturing farther into space and unlocking the mysteries of distant worlds.
               </p>
               <Link href="#" className="text-blue-600 hover:underline">
-                Read More →
+                Read More &rarr;
               </Link>
             </div>
           </div>
@@ -136,7 +136,8 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Home;       
+
 
 
 

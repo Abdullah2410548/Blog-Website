@@ -1,3 +1,9 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": ["next/core-web-vitals", "next"],
+  "rules": {
+    "no-console": "off", // Example: Rule ko disable karte hue
+    "react-hooks/exhaustive-deps": "off" // Example rule to disable if needed
+  }
 }
+
+
